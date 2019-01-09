@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>F for Atomos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+div.a {
+    text-align: center;
+}
+
+div.b {
+    text-align: center;
+}
+
+div.c {
+    text-align: center;
+} 
+
+div.d {
+    text-align: center;
+} 
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+    background-color: #555;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #40edd3;
+  color: blue;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+#Adam {background-color:red;}
+#Harrison {background-color:blue;}
+#Eduardo {background-color:green;}
+#Random {background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);}
+</style>
+
+</head>
+<body>
+    
+<p>HTML background music test</p>
+<embed src="Halo 3 OST One Final Effort by Martin O'Donnell, Michael Salvatori.mp3" autostart="true" loop="true" hidden="true">
+<p>Click to find things!</p>
+
+<div id="Adam" class="tabcontent">
+  <h1>Adam</h1>
+  <p>Organism that likes red.</p>
+</div>
+
+<div id="Harrison" class="tabcontent">
+  <h1>Harrison</h1>
+  <p>Big boi. </p> 
+</div>
+
+<div id="Eduardo" class="tabcontent">
+  <h1>Eduardo</h1>
+  <p>Yutyrannus is best dino</p>
+</div>
+
+<div id="Random" class="tabcontent">
+  <h1>Random (Changes sometimes)</h1>
+  <p>ARK pvp is more toxic than League of Legends</p>
+</div>
+
+<button class="tablink" onclick="openCity('Adam', this, 'red')" id="defaultOpen">Adam</button>
+<button class="tablink" onclick="openCity('Harrison', this, 'blue')">Harrison</button>
+<button class="tablink" onclick="openCity('Eduardo', this, 'green')">Eduardo</button>
+<button class="tablink" onclick="openCity('Random', this, 'indigo')">Random</button>
+
+<script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<h1>Welcome to the Official Site of Eduardo Hernandez</h1>
+
+<div class="a">
+<h2>Important Please Read</h2>
+<p>Whether we wanted it or not, we've stepped into a war with the Cabal on Mars. So let's get to taking out their command, one by one. Valus Ta'aurc. From what I can gather he commands the Siege Dancers from an Imperial Land Tank outside of Rubicon. He's well protected, but with the right team, we can punch through those defenses, take this beast out, and break their grip on Freehold.</p>
+</div>
+
+<div class="b">
+<h2>The ARK Adventure Code</h2>
+<p><button class="btn"><a href="https://repl.it/@RealScreeb43/TrashCanButItsaProgram">Visit my repl!</a></button></p>
+</div>
+
+<div class="c">
+<h2>Lorem... Ipsum... I forgot whats next</h2>
+<p>Imagine this has Latin filler text. Just imagine. Imagine how artificially full this would look.</p>
+</div>
+
+<div class="d">
+<h2>A Quote</h2>
+<p><i>"Better to have a tomb husk and not need it, than to need a tomb husk and not have one."</i> - Nolan Ghost</p>
+</div>
+</body>
+</html> 
