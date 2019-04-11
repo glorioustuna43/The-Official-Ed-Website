@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eduardo Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {margin:0;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+div.a {
+    text-align: center;
+}
+
+div.b {
+    text-align: center;
+}
+
+div.c {
+    text-align: center;
+} 
+
+div.d {
+    text-align: center;
+} 
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+    background-color: #555;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: zoom;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #40edd3;
+  color: blue;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+#Adam {background-color:red;}
+#Harrison {background-color:blue;}
+#Eduardo {background-color:green;}
+#Random {background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);}
+</style>
+
+</head>
+<body>
+    
+<embed src="Halo 3 OST One Final Effort by Martin O'Donnell, Michael Salvatori.mp3" autostart="true" loop="true" hidden="true">
+
+<ul>
+  <li><a class="active" href="MainPage.html">Home</a></li>
+  <li><a href="#trivia">Unecessary Trivia</a></li>
+  <li><a href="#me">Me</a></li>
+  <li><a href="#WebPurpose">Website's Purpose</a></li>
+</ul>
+
+<div id="Adam" class="tabcontent">
+  <h1>Adam</h1>
+  <p>Red more like hand it over.</p>
+</div>
+
+<div id="Harrison" class="tabcontent">
+  <h1>Harrison</h1>
+  <p>Epic Sweaters and Epic Gamer.</p> 
+</div>
+
+<div id="Eduardo" class="tabcontent">
+  <h1>Eduardo</h1>
+  <p>Liketh dinos. Yutyrannus is best dino.</p>
+</div>
+
+<div id="Random" class="tabcontent">
+  <h1>Random (Changes sometimes)</h1>
+  <p>Google knows when you ofetn open certain documents. Spooky!</p>
+</div>
+
+<button class="tablink" onclick="openCity('Adam', this, 'red')">Adam</button>
+<button class="tablink" onclick="openCity('Harrison', this, 'blue')">Harrison</button>
+<button class="tablink" onclick="openCity('Eduardo', this, 'green')">Eduardo</button>
+<button class="tablink" onclick="openCity('Random', this, 'indigo')"id="defaultOpen">Random</button>
+
+<script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<h1>Welcome to the Official Site of Eduardo Hernandez</h1>
+
+<div class="a">
+<h2>Important Please Read</h2>
+<p>You have arrived at the amazing realm of Eduardo Hernandez. Here I have all the power to edit the website and stuff. Uh, so enjoy your visit. This domain is subject to change substantially, so watch out for new stuff I add.</p>
+</div>
+
+<div class="b">
+<h2>My stuff</h2>
+<p><button class="btn"><a href="https://repl.it/@RealScreeb43/TrashCanButItsaProgram">ARK adventure Repl</a></button></p>
+<p><button class="btn"><a href="https://docs.google.com/drawings/d/1cZFkYbOYkoa4GbCIp1vxii0rXlWCpHXFibefqP9WVpo/edit">Computaional Artifact</a></button></p>
+<p><a href="ICCED.html">The Unruly Precursor to this Realm</a></p>
+</div>
+
+<div class="c">
+<h2>Lorem... Ipsum... I forgot whats next</h2>
+<p>Imagine this has Latin filler text. Just imagine. Imagine how artificially full this would look.</p>
+</div>
+
+<div class="d">
+<h2>A Quote</h2>
+<p><i>"Ding! Ding. Ding! Ding.. Ding... Cabal on the field!"</i> - Eli the Drifter</p>
+</div>
+</body>
+</html> 
